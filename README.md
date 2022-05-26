@@ -1,6 +1,6 @@
 # Avalanche (AVAX) Wallet
 
-This is the frontend Vue.js application for the Avalanche (AVAX) Wallet.
+This is the frontend Vue.js application for the Savannah (FUEL) Wallet.
 
 ## Prerequisites
 
@@ -103,15 +103,15 @@ To check if an address was used before, and to get activity history.
 
 The wallet needs to connect to an Avalanche node, and an explorer node to operate properly.
 
-By default, there are two network options to connect to: `Mainnet` and `Fuji`.
+By default, there are two network options to connect to: `Savannah` and `Marula`.
 
 ##### Mainnet
 
--   Avalanche API: `https://api.avax.network:443`
+-   Avalanche API: `https://api.savannah.network:9650`
 -   Explorer API: `https://explorerapi.avax.network`
 
 ##### Fuji (Testnet)
 
--   Avalanche API: `https://api.avax-test.network:443`
+-   Avalanche API: `https://marularpc.savannah.network:9650`
 -   Explorer API: `https://explorerapi.avax-test.network`
 

@@ -10,7 +10,7 @@
         <h2 style="padding-left: 5pt; text-indent: 0pt; text-align: justify">AGREEMENT TO TERMS</h2>
         <p style="padding-top: 12pt; padding-left: 5pt; text-indent: 0pt; text-align: justify">
             These Terms of Use constitute a legally binding agreement made between you, whether
-            personally or on behalf of an entity (“you”) and Avalanche (BVI) Inc. (&quot;
+            personally or on behalf of an entity (“you”) and . (&quot;
             <b>Company</b>
             &quot;, “
             <b>we</b>
@@ -19,8 +19,8 @@
             ”, or “
             <b>our</b>
             ”), concerning your access to and use of the
-            <span class="s1">https://wallet.avax.network/</span>
-            website and related features and services, including but not limited to the AVAX wallet
+            <span class="s1">https://wallet.savannah.network/</span>
+            website and related features and services, including but not limited to the FUEL wallet
             functionality, as well as any other media form, media channel, mobile website or mobile
             application related, linked, or otherwise connected thereto, (collectively, the “Site”).
             You agree that by accessing the Site, you have read, understood, and agreed to be bound
@@ -733,7 +733,7 @@
         <p style="padding-top: 12pt; padding-left: 5pt; text-indent: 0pt; text-align: justify">
             You may opt out of the binding arbitration described in this section by sending us
             written notice of your desire to do so by email at
-            <a href="mailto:support@avax.network" class="a" target="_blank">support@avax.network</a>
+            <a href="mailto:support@savannah.network" class="a" target="_blank">support@savannah.network</a>
             (such notice, an “Arbitration Opt-out Notice”) within thirty (30) days following the
             date you first agree to these Terms of Use, or within thirty (30) days of the date we
             modify this Dispute Resolution section as indicated in the “Last updated” date above or
@@ -993,7 +993,7 @@
             regarding use of the Site, please contact us at:
         </p>
         <p style="text-indent: 0pt; text-align: left"><br /></p>
-        <p style="padding-left: 5pt; text-indent: 0pt; text-align: left">Avalanche (BVI) Inc.</p>
+        <p style="padding-left: 5pt; text-indent: 0pt; text-align: left">.</p>
         <p style="padding-left: 5pt; text-indent: 0pt; text-align: left">
             Floor 4, Banco Popular Building
             <br />
@@ -1001,7 +1001,7 @@
             <br />
             British Virgin Islands
             <br />
-            <a href="mailto:support@avax.network" target="_blank">support@avax.network</a>
+            <a href="mailto:support@savannah.network" target="_blank">support@savannah.network</a>
         </p>
     </div>
 </template>

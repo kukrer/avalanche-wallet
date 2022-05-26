@@ -177,18 +177,18 @@ const network_module: Module<NetworkState, RootState> = {
         },
 
         async init({ state, commit, dispatch }) {
-            let mainnet = new AvaNetwork(
-                'Mainnet',
-                'https://api.avax.network:443',
+            let savannah = new AvaNetwork(
+                'Savannah',
+                'https://api.savannah.network:9650',
                 1,
                 'https://explorerapi.avax.network',
                 'https://explorer.avax.network',
                 true
             )
 
-            let fuji = new AvaNetwork(
-                'Fuji',
-                'https://api.avax-test.network:443',
+            let marula = new AvaNetwork(
+                'Marula',
+                'http://marularpc.savanna.network:9650',
                 5,
                 'https://explorerapi.avax-test.network',
                 'https://explorer.avax-test.network',
@@ -202,8 +202,8 @@ const network_module: Module<NetworkState, RootState> = {
                 console.error(e)
             }
 
-            commit('addNetwork', mainnet)
-            commit('addNetwork', fuji)
+            commit('addNetwork', savannah)
+            commit('addNetwork', marula)
 
             try {
                 let isSet = await dispatch('loadSelectedNetwork')

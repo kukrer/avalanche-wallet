@@ -370,7 +370,7 @@ const assets_module: Module<AssetsState, RootState> = {
 
         // What is the AVA coin in the network
         async updateAvaAsset({ state, commit }) {
-            let res = await avm.getAssetDescription('AVAX')
+            let res = await avm.getAssetDescription('FUEL')
             let id = bintools.cb58Encode(res.assetID)
             state.AVA_ASSET_ID = id
             let asset = new AvaAsset(id, res.name, res.symbol, res.denomination)
@@ -533,7 +533,7 @@ const assets_module: Module<AssetsState, RootState> = {
                     asset.addBalanceMultisig(balanceAmt.multisig)
                 }
 
-                // Add extras for AVAX token
+                // Add extras for FUEL token
                 // @ts-ignore
                 if (asset.id === state.AVA_ASSET_ID) {
                     asset.addExtra(getters.walletStakingBalance)
@@ -606,7 +606,7 @@ const assets_module: Module<AssetsState, RootState> = {
 
             let now = UnixNow()
 
-            // The only type of asset is AVAX on the P chain
+            // The only type of asset is FUEL on the P chain
 
             let utxos = utxoSet.getAllUTXOs()
             for (var n = 0; n < utxos.length; n++) {

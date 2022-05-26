@@ -76,22 +76,22 @@ export default {
                 vmid: 'description',
                 name: 'description',
                 content:
-                    'Avalanche wallet is a simple, highly secure, non-custodial crypto wallet for storing AVAX.',
+                    'Savannah wallet is a simple, highly secure, non-custodial crypto wallet for storing FUEL.',
             },
             {
                 vmid: 'og:description',
                 name: 'description',
                 content:
-                    'Avalanche wallet is a simple, highly secure, non-custodial crypto wallet for storing AVAX.',
+                    'Savannah wallet is a simple, highly secure, non-custodial crypto wallet for storing FUEL.',
             },
             {
                 vmid: 'og:title',
                 name: 'og:title',
-                content: 'Fastest Performing and Secure DeFi Wallet | Avalanche Wallet',
+                content: 'Fastest Performing and Secure DeFi Wallet | Savannah Wallet',
             },
         ],
         title: 'Fastest Performing and Secure DeFi Wallet',
-        titleTemplate: '%s | Avalanche Wallet',
+        titleTemplate: '%s | Savannah Wallet',
     },
 }
 </script>

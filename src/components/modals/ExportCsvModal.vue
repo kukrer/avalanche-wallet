@@ -201,8 +201,8 @@ export default class ExportCsvModal extends Vue {
             'Stake Start Date',
             'Stake Duration',
             'Reward Date',
-            'AVAX Price at Reward Date',
-            'Reward Received (AVAX)',
+            'FUEL Price at Reward Date',
+            'Reward Received (FUEL)',
             'Reward Received (USD)',
         ]
 
