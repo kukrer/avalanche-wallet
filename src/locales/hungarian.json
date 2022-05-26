@@ -5,15 +5,15 @@
     "address": "Cím",
     "add_pk": "Hozzáadás",
     "home": {
-        "desc": "Az Avalanche Wallet egyszerű, biztonságos, nem letétkezelői pénztárca az Avalanche eszközök tárolására.",
+        "desc": "Az Savannah Wallet egyszerű, biztonságos, nem letétkezelői pénztárca az Savannah eszközök tárolására.",
         "access": {
             "title": "Üdv újra!",
-            "desc": "Itt 'férhet hozzá' meglévő Avalanche pénztárcájához.",
+            "desc": "Itt 'férhet hozzá' meglévő Savannah pénztárcájához.",
             "submit": "Wallet hozzáférés"
         },
         "create": {
-            "title": "Új Önnek az Avalanche Wallet?",
-            "desc": "„Hozzon létre” új pénztárcát az Avalanche eszközök küldéséhez, fogadásához és cseréjéhez.",
+            "title": "Új Önnek az Savannah Wallet?",
+            "desc": "„Hozzon létre” új pénztárcát az Savannah eszközök küldéséhez, fogadásához és cseréjéhez.",
             "submit": "Hozzon létre új pénztárcát"
         }
     },
@@ -58,18 +58,18 @@
         }
     },
     "create": {
-        "generate": "Generáljon új kulcsmondatot Avalanche pénztárcája használatához.",
+        "generate": "Generáljon új kulcsmondatot Savannah pénztárcája használatához.",
         "but_have": "Már van pénztárcája?",
         "submit": "Kulcsmondat létrehozása",
         "cancel": "Megszünteti",
         "mnemonic_title": "Ez a Ön kulcsmondata.",
-        "mnemonic_desc": "Ezt a 24 szót használja az itt megadott sorrendben az Avalanche Wallet pénztárca\nhelyreállítására/elérésére",
+        "mnemonic_desc": "Ezt a 24 szót használja az itt megadott sorrendben az Savannah Wallet pénztárca\nhelyreállítására/elérésére",
         "attention": "Figyelem!",
-        "warning": "Biztonságos helyen tárolja ezt a kulcsmondatot. Ezzel a kulcsmondattal bárki hozzáférhet Avalanche pénztárcájához. Az elveszített kulcsmondat helyreállítására viszont nincs mód.",
+        "warning": "Biztonságos helyen tárolja ezt a kulcsmondatot. Ezzel a kulcsmondattal bárki hozzáférhet Savannah pénztárcájához. Az elveszített kulcsmondat helyreállítására viszont nincs mód.",
         "confirm": "Biztonsági helyre írtam fel a kulcsmondatomat.",
         "regenerate": "Regenerálás",
         "success_title": "Gratulálunk!",
-        "success_desc": "Ideje megtekinteni Avalanche pénztárcáját.",
+        "success_desc": "Ideje megtekinteni Savannah pénztárcáját.",
         "success_submit": "Hozzáférés pénztárcád",
         "verify": "Ellenőrizze",
         "verifytitle": "Ellenőrizze a mnemónikus elemet",
@@ -78,15 +78,15 @@
         "error_word": "A szóra megadott mnemonikus kifejezés nem egyezik a tényleges kifejezéssel."
     },
     "top": {
-        "title1": "Származtatott Avalanche pénztárca cím",
+        "title1": "Származtatott Savannah pénztárca cím",
         "title2": "Egyensúly",
         "title3": "Alhálózat",
         "title4": "Hálózatok",
         "nftcol": "nem helyettesíthető token (NHT)",
         "nftempty": "Még nem gyűjtött össze nem helyettesíthető tokent.",
         "locked": "Zárt",
-        "info2": "A Token Sale-ban vásároltam érméket. Hol van az AVAX?",
-        "info2_desc": "Ez a pénztárca az Avalanche Everest teszthálózathoz csatlakozik. Vásárlása az Avalanche Mainnet elindítása után jelenik meg a pénztárcában.",
+        "info2": "A Token Sale-ban vásároltam érméket. Hol van az FUEL?",
+        "info2_desc": "Ez a pénztárca az Savannah Everest teszthálózathoz csatlakozik. Vásárlása az Savannah Mainnet elindítása után jelenik meg a pénztárcában.",
         "hover1": "Cím QR-kód megtekintése",
         "hover2": "Nyomtatás",
         "hover3": "Másolat",
@@ -101,7 +101,7 @@
             "collectibles": "Gyűjthető tárgyak"
         },
         "address": {
-            "derived": "Származtatott Avalanche pénztárca cím",
+            "derived": "Származtatott Savannah pénztárca cím",
             "desc": "Ez az Ön címe, ahová pénzt kap. Címe minden befizetés után változik."
         }
     },
@@ -172,26 +172,26 @@
     },
     "earn": {
         "title": "Keressen",
-        "desc": "Több AVAX-ot kereshet, ha megjátssza meglévő zsetonjait.",
+        "desc": "Több FUEL-ot kereshet, ha megjátssza meglévő zsetonjait.",
         "subtitle1": "Érvényesítés",
         "subtitle2": "Delegálás",
         "subtitle3": "Transzfer láncok között",
         "subtitle4": "Becsült jutalom",
-        "warning_1": "Legalább {0} AVAX szükséges a P láncon ahhoz, hogy érvényesítő legyen.",
-        "warning_2": "Legalábbt {0} AVAX szükséges a P láncon ahhoz, hogy érvényesítő legyen.",
+        "warning_1": "Legalább {0} FUEL szükséges a P láncon ahhoz, hogy érvényesítő legyen.",
+        "warning_2": "Legalábbt {0} FUEL szükséges a P láncon ahhoz, hogy érvényesítő legyen.",
         "validate_card": {
             "title": "Érvényesítés",
-            "desc": "Rendelkezik egy Avalanche csomópontja amit meg akar játszani.",
+            "desc": "Rendelkezik egy Savannah csomópontja amit meg akar játszani.",
             "submit": "Érvényesítő hozzáadása"
         },
         "delegate_card": {
             "title": "Delegálás",
-            "desc": "Nem rendelkezik Avalanche csomóponttal, de játszani akar egy másik csomópont használatával.",
+            "desc": "Nem rendelkezik Savannah csomóponttal, de játszani akar egy másik csomópont használatával.",
             "submit": "Delegáló hozzáadása"
         },
         "transfer_card": {
             "title": "Transzfer láncok között",
-            "desc": "A megjátszáshoz AVAX szükséges a P láncon. Vigyen át zsetont az X láncról P-re.",
+            "desc": "A megjátszáshoz FUEL szükséges a P láncon. Vigyen át zsetont az X láncról P-re.",
             "submit": "Transzfer"
         },
         "rewards_card": {
@@ -242,7 +242,7 @@
             },
             "amount": {
                 "label": "Megjátszott összeg",
-                "desc": "AVAX összeg amit zárol a megjátszáshoz."
+                "desc": "FUEL összeg amit zárol a megjátszáshoz."
             },
             "fee": {
                 "label": "Delegálási költség",
@@ -281,7 +281,7 @@
             },
             "errs": {
                 "date": "A kezdési dátum a jövőben van, a befejezés dátuma pedig követi a kezdési dátumot.",
-                "amount": "A delegálási összeg legalább {0} AVAX",
+                "amount": "A delegálási összeg legalább {0} FUEL",
                 "id": "Érvénytelen csomópont azonosító. Így kell kezdődnie: \"NodeID-\"",
                 "address": "Érvénytelen jutalom cím."
             }
@@ -319,8 +319,8 @@
                 },
                 "amount": {
                     "label": "Megjátszott összeg",
-                    "desc": "AVAX összeg amit zárol a megjátszáshoz.",
-                    "desc2": "Az elérhető delegálási összeg ehhez a csomóponthoz {0} AVAX"
+                    "desc": "FUEL összeg amit zárol a megjátszáshoz.",
+                    "desc2": "Az elérhető delegálási összeg ehhez a csomóponthoz {0} FUEL"
                 },
                 "reward": {
                     "label": "Jutalom címe",
@@ -345,7 +345,7 @@
                 "max_dur": "A megjátszási időtartam legfeljebb 1 év.",
                 "no_node": "Meg kell adnia egy érvényesítőt.",
                 "val_end": "A delegálás befejezési dátuma nem lehet későbbi az érvényesítő befejezési dátumánál.",
-                "amt": "A delegálási összeg legalább {0} AVAX."
+                "amt": "A delegálási összeg legalább {0} FUEL."
             },
             "summary": {
                 "duration": "Megjátszási időtartam",

@@ -5,15 +5,15 @@
     "address": "Adresse",
     "add_pk": "Tilføj privat nøgle",
     "home": {
-        "desc": "Avalanche Wallet er en enkel, sikker, ikke-frihedsberøvende tegnebog til opbevaring af Avalanche aktiver.",
+        "desc": "Savannah Wallet er en enkel, sikker, ikke-frihedsberøvende tegnebog til opbevaring af Savannah aktiver.",
         "access": {
             "title": "Velkommen tilbage!",
-            "desc": "Få adgang til din eksisterende Avalanche-tegnebog her.",
+            "desc": "Få adgang til din eksisterende Savannah-tegnebog her.",
             "submit": "Adgang til tegnebogen"
         },
         "create": {
-            "title": "Ny på Avalanche Wallet?",
-            "desc": "'Opret' en ny tegnebog til at sende, modtage og bytte Avalanche aktiver.",
+            "title": "Ny på Savannah Wallet?",
+            "desc": "'Opret' en ny tegnebog til at sende, modtage og bytte Savannah aktiver.",
             "submit": "Opret ny tegnebog"
         }
     },
@@ -58,18 +58,18 @@
         }
     },
     "create": {
-        "generate": "Generer en ny nøglesætning for at opsætte din Avalanche Wallet.",
+        "generate": "Generer en ny nøglesætning for at opsætte din Savannah Wallet.",
         "but_have": "Har du allerede en tegnebog?",
         "submit": "Genere nøglesætning",
         "cancel": "Annuller",
         "mnemonic_title": "Dette er din nøglesætning.",
-        "mnemonic_desc": "Brug disse 24 ord i rækkefølge for at gendanne din Avalanche Wallet",
+        "mnemonic_desc": "Brug disse 24 ord i rækkefølge for at gendanne din Savannah Wallet",
         "attention": "Obs!",
-        "warning": "Gem denne nøglesætning et sikkert sted. Alle med denne nøglesætning kan have adgang til din Avalanche Wallet. Du kan ikke gendanne mistede nøglesætninger.",
+        "warning": "Gem denne nøglesætning et sikkert sted. Alle med denne nøglesætning kan have adgang til din Savannah Wallet. Du kan ikke gendanne mistede nøglesætninger.",
         "confirm": "Jeg skrev min nøglesætning ned et sikkert sted.",
         "regenerate": "Regenere",
         "success_title": "Tillykke!",
-        "success_desc": "Det er tid til at få adgang til din Avalanche Wallet.",
+        "success_desc": "Det er tid til at få adgang til din Savannah Wallet.",
         "success_submit": "Adgang til tegnebogen",
         "verify": "Bekræft",
         "verifytitle": "Bekræft Mnemonic",
@@ -78,15 +78,15 @@
         "error_word": "Den mnemonic-sætning, du indtastede med ord, stemmer ikke overens med den aktuelle sætning."
     },
     "top": {
-        "title1": "Afledt Avalanche tegnebog-adresse",
+        "title1": "Afledt Savannah tegnebog-adresse",
         "title2": "Saldo",
         "title3": "Subnet",
         "title4": "Netværk",
         "nftcol": "NFTs",
         "nftempty": "Du har ikke samlet nogen ikke-ombyttelige poletter.",
         "locked": "Låst",
-        "info2": "Jeg købte mønter i Token Salg. Hvor er min AVAX?",
-        "info2_desc": "Denne tegnebog er tilsluttet Avalanche Everest testnetværket. Dit køb vises i tegnebogen efter Avalanche Mainnet-lanceringen.",
+        "info2": "Jeg købte mønter i Token Salg. Hvor er min FUEL?",
+        "info2_desc": "Denne tegnebog er tilsluttet Savannah Everest testnetværket. Dit køb vises i tegnebogen efter Savannah Mainnet-lanceringen.",
         "hover1": "Se adresse for QR-kode",
         "hover2": "Print",
         "hover3": "Kopi",
@@ -101,7 +101,7 @@
             "collectibles": "Samlerobjekter"
         },
         "address": {
-            "derived": "Afledt Avalanche tegnebog-adresse",
+            "derived": "Afledt Savannah tegnebog-adresse",
             "desc": "Dette er din adresse til at modtage penge. Din adresse ændres efter hver indbetaling."
         }
     },
@@ -172,26 +172,26 @@
     },
     "earn": {
         "title": "Tjen",
-        "desc": "Du kan tjene mere AVAX ved at indsætte dine eksisterende poletter.",
+        "desc": "Du kan tjene mere FUEL ved at indsætte dine eksisterende poletter.",
         "subtitle1": "Bekræft",
         "subtitle2": "Deleger",
         "subtitle3": "Cross Chain overførsel",
         "subtitle4": "Anslåede belønninger",
-        "warning_1": "Du skal have mindst {0} AVAX i P-kæden for at blive bekræftet.",
-        "warning_2": "Du skal have mindst {0} AVAX i P-kæden for at blive delegeret.",
+        "warning_1": "Du skal have mindst {0} FUEL i P-kæden for at blive bekræftet.",
+        "warning_2": "Du skal have mindst {0} FUEL i P-kæden for at blive delegeret.",
         "validate_card": {
             "title": "Bekræft",
-            "desc": "Du har en Avalanche-knude, som du vil satse på.",
+            "desc": "Du har en Savannah-knude, som du vil satse på.",
             "submit": "Tilføj Validator"
         },
         "delegate_card": {
             "title": "Deleger",
-            "desc": "Du ejer ikke en Avalanche-knude, men du vil satse ved hjælp af en anden knude.",
+            "desc": "Du ejer ikke en Savannah-knude, men du vil satse ved hjælp af en anden knude.",
             "submit": "Tilføj Delegator"
         },
         "transfer_card": {
             "title": "Cross Chain overførsel",
-            "desc": "Indsatser kræver AVAX på P-kæden. Overfør poletter mellem X og P.",
+            "desc": "Indsatser kræver FUEL på P-kæden. Overfør poletter mellem X og P.",
             "submit": "Overfør"
         },
         "rewards_card": {
@@ -242,7 +242,7 @@
             },
             "amount": {
                 "label": "Indsatsbeløb",
-                "desc": "Mængden af AVAX, der skal låses til indsats."
+                "desc": "Mængden af FUEL, der skal låses til indsats."
             },
             "fee": {
                 "label": "Delegationsgebyr",
@@ -281,7 +281,7 @@
             },
             "errs": {
                 "date": "Startdatoen skal være i fremtiden, og slutdatoen skal være efter startdatoen.",
-                "amount": "Indsatsbeløbet skal være mindst {0} AVAX",
+                "amount": "Indsatsbeløbet skal være mindst {0} FUEL",
                 "id": "Ugyldigt knude-id. Skal starte med \"KnudeID-\"",
                 "address": "Ugyldig belønningsadresse."
             }
@@ -319,8 +319,8 @@
                 },
                 "amount": {
                     "label": "Indsatsbeløb",
-                    "desc": "Mængden af AVAX, der skal låses til indsats.",
-                    "desc2": "Det tilgængelige delegeringsbeløb for denne knude er {0} AVAX"
+                    "desc": "Mængden af FUEL, der skal låses til indsats.",
+                    "desc2": "Det tilgængelige delegeringsbeløb for denne knude er {0} FUEL"
                 },
                 "reward": {
                     "label": "Belønningsadresse",
@@ -345,7 +345,7 @@
                 "max_dur": "Maks. indsatsvarighed er 1 år.",
                 "no_node": "Du skal angive en validator.",
                 "val_end": "Delegationens slutdato kan ikke være længere end validatorens slutdato.",
-                "amt": "Delegationsbeløbet skal være mindst {0} AVAX."
+                "amt": "Delegationsbeløbet skal være mindst {0} FUEL."
             },
             "summary": {
                 "duration": "Indsatsvarighed",
