@@ -141,7 +141,7 @@ export default class ExportAvaxCsvModal extends Vue {
         }
 
         let csvRows = rows.map((row) => avaxTransferDataToCsvRow(row))
-        let headers = ['Tx ID', 'Date', 'Memo', 'From', 'To', 'Sent/Received', 'Amount (AVAX)']
+        let headers = ['Tx ID', 'Date', 'Memo', 'From', 'To', 'Sent/Received', 'Amount (FUEL)']
         let allRows = [headers, ...csvRows]
 
         let csvContent = createCSVContent(allRows)
