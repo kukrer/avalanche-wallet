@@ -43,7 +43,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 
 import Spinner from '@/components/misc/Spinner.vue'
 import { WalletType } from '@/js/wallets/types'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 import {
     ExportChainsC,
     ExportChainsP,
@@ -52,7 +52,7 @@ import {
     Network,
     NetworkHelper,
     Utils,
-} from '@avalabs/avalanche-wallet-sdk'
+} from '@savannah-labs/savannah-wallet-sdk'
 
 @Component({
     components: { Spinner },

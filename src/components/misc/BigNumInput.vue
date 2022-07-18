@@ -13,7 +13,7 @@
 </template>
 <script>
 import Big from 'big.js'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 
 export default {
     data() {

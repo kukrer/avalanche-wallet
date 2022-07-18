@@ -5,12 +5,12 @@ import { NetworkState } from '@/store/modules/network/types'
 import { ava, avm, bintools, cChain, infoApi, pChain } from '@/AVA'
 import { AvaNetwork } from '@/js/AvaNetwork'
 import { explorer_api } from '@/explorer_api'
-import { BN } from 'avalanche'
-import { getPreferredHRP } from 'avalanche/dist/utils'
+import { BN } from '@savannah-labs/savannahjs'
+import { getPreferredHRP } from '@savannah-labs/savannahjs/dist/utils'
 import router from '@/router'
 import { web3 } from '@/evm'
 import { setSocketNetwork } from '../../../providers'
-import { Network } from '@avalabs/avalanche-wallet-sdk'
+import { Network } from '@savannah-labs/savannah-wallet-sdk'
 const network_module: Module<NetworkState, RootState> = {
     namespaced: true,
     state: {
@@ -179,19 +179,19 @@ const network_module: Module<NetworkState, RootState> = {
         async init({ state, commit, dispatch }) {
             let savannah = new AvaNetwork(
                 'Savannah',
-                'https://api.savannah.network:9650',
-                1,
-                'https://explorerapi.avax.network',
-                'https://explorer.avax.network',
+                'http://api.savannah.network:9650',
+                6,
+                'http://api.savannah.network:9650',
+                'http://explorer.savannah.network',
                 true
             )
 
             let marula = new AvaNetwork(
                 'Marula',
-                'http://marularpc.savanna.network:9650',
-                5,
-                'https://explorerapi.avax-test.network',
-                'https://explorer.avax-test.network',
+                'http://marularpc.savannah.network:9650',
+                7,
+                'http://marularpc.savannah.network:9650',
+                'http://explorer.savannah.network',
                 true
             )
 

@@ -1,6 +1,6 @@
 import { ava, avm, bintools, cChain, pChain } from '@/AVA'
 import { ITransaction } from '@/components/wallet/transfer/types'
-import { BN, Buffer } from 'avalanche'
+import { BN, Buffer } from '@savannah-labs/savannahjs'
 import {
     AssetAmountDestination,
     BaseTx,
@@ -13,13 +13,13 @@ import {
     UTXOSet,
     UTXOSet as AVMUTXOSet,
     AVMConstants,
-} from 'avalanche/dist/apis/avm'
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 
-import { PayloadBase } from 'avalanche/dist/utils'
-import { OutputOwners } from 'avalanche/dist/common'
-import { PlatformVMConstants } from 'avalanche/dist/apis/platformvm'
+import { PayloadBase } from '@savannah-labs/savannahjs/dist/utils'
+import { OutputOwners } from '@savannah-labs/savannahjs/dist/common'
+import { PlatformVMConstants } from '@savannah-labs/savannahjs/dist/apis/platformvm'
 
-import { UnsignedTx as EVMUnsignedTx, EVMConstants } from 'avalanche/dist/apis/evm'
+import { UnsignedTx as EVMUnsignedTx, EVMConstants } from '@savannah-labs/savannahjs/dist/apis/evm'
 
 import { web3 } from '@/evm'
 import ERC721Token from '@/js/ERC721Token'

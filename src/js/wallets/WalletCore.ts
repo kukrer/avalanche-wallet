@@ -1,9 +1,9 @@
 /*
 The base wallet class used for common functionality
 */
-import { BN } from 'avalanche'
-import { UTXOSet as AVMUTXOSet } from 'avalanche/dist/apis/avm'
-import { UTXOSet as PlatformUTXOSet } from 'avalanche/dist/apis/platformvm'
+import { BN } from '@savannah-labs/savannahjs'
+import { UTXOSet as AVMUTXOSet } from '@savannah-labs/savannahjs/dist/apis/avm'
+import { UTXOSet as PlatformUTXOSet } from '@savannah-labs/savannahjs/dist/apis/platformvm'
 import {
     ExportChainsC,
     ExportChainsP,
@@ -12,15 +12,21 @@ import {
     UtxoHelper,
     TxHelper,
     GasHelper,
-} from '@avalabs/avalanche-wallet-sdk'
+} from '@savannah-labs/savannah-wallet-sdk'
 import { ava, avm, bintools, cChain, pChain } from '@/AVA'
-import { UTXOSet as EVMUTXOSet } from 'avalanche/dist/apis/evm/utxos'
-import { Tx as EVMTx, UnsignedTx as EVMUnsignedTx } from 'avalanche/dist/apis/evm/tx'
+import { UTXOSet as EVMUTXOSet } from '@savannah-labs/savannahjs/dist/apis/evm/utxos'
+import {
+    Tx as EVMTx,
+    UnsignedTx as EVMUnsignedTx,
+} from '@savannah-labs/savannahjs/dist/apis/evm/tx'
 import {
     Tx as PlatformTx,
     UnsignedTx as PlatformUnsignedTx,
-} from 'avalanche/dist/apis/platformvm/tx'
-import { Tx as AVMTx, UnsignedTx as AVMUnsignedTx } from 'avalanche/dist/apis/avm/tx'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm/tx'
+import {
+    Tx as AVMTx,
+    UnsignedTx as AVMUnsignedTx,
+} from '@savannah-labs/savannahjs/dist/apis/avm/tx'
 import { AvmImportChainType, WalletType } from '@/js/wallets/types'
 var uniqid = require('uniqid')
 

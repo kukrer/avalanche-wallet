@@ -1,5 +1,5 @@
 import { ChainIdType } from '@/constants'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 
 export enum TxState {
     failed = -1,

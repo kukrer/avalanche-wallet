@@ -61,7 +61,7 @@
 import 'reflect-metadata'
 import { Vue, Component, Prop } from 'vue-property-decorator'
 import { ava, pChain } from '@/AVA'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 
 import ValidatorRow from '@/components/misc/ValidatorList/ValidatorRow.vue'
 import FilterSettings from '@/components/misc/ValidatorList/FilterSettings.vue'

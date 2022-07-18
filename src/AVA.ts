@@ -1,9 +1,9 @@
-import { KeyChain as AVMKeyChain, AVMAPI } from 'avalanche/dist/apis/avm'
-import { InfoAPI } from 'avalanche/dist/apis/info'
-import Avalanche from 'avalanche'
+import { KeyChain as AVMKeyChain, AVMAPI } from '@savannah-labs/savannahjs/dist/apis/avm'
+import { InfoAPI } from '@savannah-labs/savannahjs/dist/apis/info'
+import Avalanche from '@savannah-labs/savannahjs'
 //@ts-ignore
-import BinTools from 'avalanche/dist/utils/bintools'
-import { EVMAPI } from 'avalanche/dist/apis/evm'
+import BinTools from '@savannah-labs/savannahjs/dist/utils/bintools'
+import { EVMAPI } from '@savannah-labs/savannahjs/dist/apis/evm'
 
 // Connect to TestNet by default
 // Doesn't really matter how we initialize, it will get changed by the network module later

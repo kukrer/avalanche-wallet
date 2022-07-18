@@ -19,7 +19,7 @@ import { ava, pChain } from '@/AVA'
 import { DelegatorRaw, ValidatorRaw } from '@/components/misc/ValidatorList/types'
 import moment from 'moment'
 import Big from 'big.js'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 import { bnToBig } from '@/helpers/helper'
 import { ValidatorListItem } from '@/store/modules/platform/types'
 

@@ -3,39 +3,49 @@ import { ITransaction } from '@/components/wallet/transfer/types'
 import { digestMessage } from '@/helpers/helper'
 import { WalletNameType } from '@/js/wallets/types'
 
-import { Buffer as BufferAvalanche, BN } from 'avalanche'
+import { Buffer as BufferAvalanche, BN } from '@savannah-labs/savannahjs'
 import {
     KeyPair as AVMKeyPair,
     KeyChain as AVMKeyChain,
     UTXOSet as AVMUTXOSet,
     UTXO,
     UnsignedTx,
-} from 'avalanche/dist/apis/avm'
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 import {
     KeyPair as PlatformKeyPair,
     KeyChain as PlatformKeyChain,
     UTXOSet as PlatformUTXOSet,
     UTXOSet,
-} from 'avalanche/dist/apis/platformvm'
-import { KeyChain, KeyChain as EVMKeyChain, UTXOSet as EVMUTXOSet } from 'avalanche/dist/apis/evm'
-import { PayloadBase } from 'avalanche/dist/utils'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm'
+import {
+    KeyChain,
+    KeyChain as EVMKeyChain,
+    UTXOSet as EVMUTXOSet,
+} from '@savannah-labs/savannahjs/dist/apis/evm'
+import { PayloadBase } from '@savannah-labs/savannahjs/dist/utils'
 import { buildUnsignedTransaction } from '../TxHelper'
 import { AvaWalletCore, UnsafeWallet } from './types'
-import { UTXO as PlatformUTXO } from 'avalanche/dist/apis/platformvm/utxos'
+import { UTXO as PlatformUTXO } from '@savannah-labs/savannahjs/dist/apis/platformvm/utxos'
 import { privateToAddress } from 'ethereumjs-util'
-import { Tx as AVMTx, UnsignedTx as AVMUnsignedTx } from 'avalanche/dist/apis/avm/tx'
+import {
+    Tx as AVMTx,
+    UnsignedTx as AVMUnsignedTx,
+} from '@savannah-labs/savannahjs/dist/apis/avm/tx'
 import {
     Tx as PlatformTx,
     UnsignedTx as PlatformUnsignedTx,
-} from 'avalanche/dist/apis/platformvm/tx'
-import { Tx as EvmTx, UnsignedTx as EVMUnsignedTx } from 'avalanche/dist/apis/evm/tx'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm/tx'
+import {
+    Tx as EvmTx,
+    UnsignedTx as EVMUnsignedTx,
+} from '@savannah-labs/savannahjs/dist/apis/evm/tx'
 import Erc20Token from '@/js/Erc20Token'
 import { WalletCore } from '@/js/wallets/WalletCore'
 import { WalletHelper } from '@/helpers/wallet_helper'
 import { avmGetAllUTXOs, platformGetAllUTXOs } from '@/helpers/utxo_helper'
-import { UTXO as AVMUTXO } from 'avalanche/dist/apis/avm/utxos'
+import { UTXO as AVMUTXO } from '@savannah-labs/savannahjs/dist/apis/avm/utxos'
 import { Transaction } from '@ethereumjs/tx'
-import { ExportChainsC, ExportChainsP, ExportChainsX } from '@avalabs/avalanche-wallet-sdk'
+import { ExportChainsC, ExportChainsP, ExportChainsX } from '@savannah-labs/savannah-wallet-sdk'
 
 class SingletonWallet extends WalletCore implements AvaWalletCore, UnsafeWallet {
     keyChain: AVMKeyChain

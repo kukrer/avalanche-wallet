@@ -34,7 +34,7 @@ import { ImportKeyfileInput } from '@/store/types'
 import { SingletonWallet } from '@/js/wallets/SingletonWallet'
 import { privateToAddress } from 'ethereumjs-util'
 import { bintools } from '@/AVA'
-import { Buffer } from 'avalanche'
+import { Buffer } from '@savannah-labs/savannahjs'
 
 @Component
 export default class PrivateKey extends Vue {

@@ -80,7 +80,7 @@ export default class MyKeys extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "../../../main";
+@use '../../../main';
 
 .default_key {
 }

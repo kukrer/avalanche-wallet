@@ -40,7 +40,7 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import { ITransactionData, ITransactionDataProcessed } from '@/store/modules/history/types'
 import { AssetsDict, NftFamilyDict } from '@/store/modules/assets/types'
 import { bnToBig } from '@/helpers/helper'
-import { BN, Buffer } from 'avalanche'
+import { BN, Buffer } from '@savannah-labs/savannahjs'
 
 import StakingTx from '@/components/SidePanels/History/ViewTypes/StakingTx.vue'
 import BaseTx from '@/components/SidePanels/History/ViewTypes/BaseTx.vue'
@@ -125,7 +125,7 @@ export default class TxRow extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "../../../main";
+@use '../../../main';
 .tx_row {
     //display: grid;
     //grid-template-columns: 1fr 1fr;

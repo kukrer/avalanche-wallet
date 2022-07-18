@@ -222,23 +222,23 @@ import 'reflect-metadata'
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator'
 //@ts-ignore
 import AvaxInput from '@/components/misc/AvaxInput.vue'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 import Big from 'big.js'
 //@ts-ignore
-import { QrInput } from '@avalabs/vue_components'
+import { QrInput } from '@savannah-labs/vue_components'
 import { bintools, pChain } from '@/AVA'
 import MnemonicWallet from '@/js/wallets/MnemonicWallet'
 import ConfirmPage from '@/components/wallet/earn/Validate/ConfirmPage.vue'
 import moment from 'moment'
 import { bnToBig, calculateStakingReward } from '@/helpers/helper'
-import { ONEAVAX } from 'avalanche/dist/utils'
+import { ONEAVAX } from '@savannah-labs/savannahjs/dist/utils'
 import Tooltip from '@/components/misc/Tooltip.vue'
 import CurrencySelect from '@/components/misc/CurrencySelect/CurrencySelect.vue'
 import Spinner from '@/components/misc/Spinner.vue'
 import DateForm from '@/components/wallet/earn/DateForm.vue'
 import UtxoSelectForm from '@/components/wallet/earn/UtxoSelectForm.vue'
 import Expandable from '@/components/misc/Expandable.vue'
-import { AmountOutput, UTXO } from 'avalanche/dist/apis/platformvm'
+import { AmountOutput, UTXO } from '@savannah-labs/savannahjs/dist/apis/platformvm'
 import { WalletType } from '@/js/wallets/types'
 
 const MIN_MS = 60000
@@ -638,7 +638,7 @@ export default class AddValidator extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "../../../../main";
+@use '../../../../main';
 .cols {
     /*display: grid;*/
     /*grid-template-columns: 1fr 1fr;*/

@@ -1,4 +1,4 @@
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 export interface TransactionValueDict {
     [address: string]: number
 }

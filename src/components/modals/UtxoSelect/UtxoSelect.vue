@@ -49,11 +49,11 @@ import {
     StakeableLockOut,
     UTXO,
     UTXOSet,
-} from 'avalanche/dist/apis/platformvm'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm'
 
 import UtxoRow from '@/components/modals/UtxoSelect/UtxoRow.vue'
-import { BN } from 'avalanche'
-import { UnixNow } from 'avalanche/dist/utils'
+import { BN } from '@savannah-labs/savannahjs'
+import { UnixNow } from '@savannah-labs/savannahjs/dist/utils'
 import { bnToBig } from '@/helpers/helper'
 
 @Component({

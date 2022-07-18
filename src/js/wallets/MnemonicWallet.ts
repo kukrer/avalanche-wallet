@@ -12,7 +12,7 @@ import {
     UTXO as AVMUTXO,
     AssetAmountDestination,
     UTXOSet,
-} from 'avalanche/dist/apis/avm'
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 
 import { privateToAddress } from 'ethereumjs-util'
 
@@ -21,31 +21,31 @@ import {
     UnsignedTx as PlatformUnsignedTx,
     UTXO as PlatformUTXO,
     Tx as PlatformTx,
-} from 'avalanche/dist/apis/platformvm'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm'
 
 import {
     KeyChain as EVMKeyChain,
     UnsignedTx as EVMUnsignedTx,
     Tx as EvmTx,
-} from 'avalanche/dist/apis/evm'
-import { getPreferredHRP, PayloadBase } from 'avalanche/dist/utils'
+} from '@savannah-labs/savannahjs/dist/apis/evm'
+import { getPreferredHRP, PayloadBase } from '@savannah-labs/savannahjs/dist/utils'
 
 import * as bip39 from 'bip39'
-import { BN, Buffer as BufferAvalanche } from 'avalanche'
+import { BN, Buffer as BufferAvalanche } from '@savannah-labs/savannahjs'
 import { ava, avm, bintools, cChain, pChain } from '@/AVA'
 import { AvmExportChainType, AvmImportChainType, IAvaHdWallet } from '@/js/wallets/types'
 import HDKey from 'hdkey'
 import { ITransaction } from '@/components/wallet/transfer/types'
-import { KeyPair as PlatformVMKeyPair } from 'avalanche/dist/apis/platformvm'
+import { KeyPair as PlatformVMKeyPair } from '@savannah-labs/savannahjs/dist/apis/platformvm'
 import { HdWalletCore } from '@/js/wallets/HdWalletCore'
 import { WalletNameType } from '@/js/wallets/types'
 import { digestMessage } from '@/helpers/helper'
-import { KeyChain } from 'avalanche/dist/apis/evm'
+import { KeyChain } from '@savannah-labs/savannahjs/dist/apis/evm'
 import Erc20Token from '@/js/Erc20Token'
 import { WalletHelper } from '@/helpers/wallet_helper'
 import { Transaction } from '@ethereumjs/tx'
 import MnemonicPhrase from '@/js/wallets/MnemonicPhrase'
-import { ExportChainsC, ExportChainsP } from '@avalabs/avalanche-wallet-sdk'
+import { ExportChainsC, ExportChainsP } from '@savannah-labs/savannah-wallet-sdk'
 
 // HD WALLET
 // Accounts are not used and the account index is fixed to 0

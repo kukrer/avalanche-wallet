@@ -5,12 +5,18 @@ import {
     KeyPair as AVMKeyPair,
     NFTTransferOutput,
     UTXO,
-} from 'avalanche/dist/apis/avm'
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 
-import { Defaults, getPreferredHRP, ONEAVAX, PayloadBase, PayloadTypes } from 'avalanche/dist/utils'
+import {
+    Defaults,
+    getPreferredHRP,
+    ONEAVAX,
+    PayloadBase,
+    PayloadTypes,
+} from '@savannah-labs/savannahjs/dist/utils'
 import Big from 'big.js'
 
-import { Buffer, BN } from 'avalanche'
+import { Buffer, BN } from '@savannah-labs/savannahjs'
 import createHash from 'create-hash'
 
 function bnToBig(val: BN, denomination = 0): Big {

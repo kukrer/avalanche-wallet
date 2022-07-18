@@ -8,7 +8,7 @@ import EthereumjsCommon from '@ethereumjs/common'
 import { Transaction } from '@ethereumjs/tx'
 
 import moment from 'moment'
-import { Buffer, BN } from 'avalanche'
+import { Buffer, BN } from '@savannah-labs/savannahjs'
 import HDKey from 'hdkey'
 import { ava, avm, bintools, cChain, pChain } from '@/AVA'
 const bippath = require('bip32-path')
@@ -16,7 +16,11 @@ import createHash from 'create-hash'
 import store from '@/store'
 import { importPublic, publicToAddress, bnToRlp, rlp } from 'ethereumjs-util'
 
-import { UTXO as AVMUTXO, UTXO, UTXOSet as AVMUTXOSet } from 'avalanche/dist/apis/avm/utxos'
+import {
+    UTXO as AVMUTXO,
+    UTXO,
+    UTXOSet as AVMUTXOSet,
+} from '@savannah-labs/savannahjs/dist/apis/avm/utxos'
 import { AvaWalletCore } from '@/js/wallets/types'
 import { ITransaction } from '@/components/wallet/transfer/types'
 import {
@@ -27,7 +31,7 @@ import {
     Tx as AVMTx,
     UnsignedTx as AVMUnsignedTx,
     ImportTx as AVMImportTx,
-} from 'avalanche/dist/apis/avm'
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 
 import {
     ImportTx as PlatformImportTx,
@@ -39,7 +43,7 @@ import {
     SelectCredentialClass as PlatformSelectCredentialClass,
     AddDelegatorTx,
     AddValidatorTx,
-} from 'avalanche/dist/apis/platformvm'
+} from '@savannah-labs/savannahjs/dist/apis/platformvm'
 
 import {
     UnsignedTx as EVMUnsignedTx,
@@ -49,10 +53,16 @@ import {
     EVMConstants,
     EVMInput,
     SelectCredentialClass as EVMSelectCredentialClass,
-} from 'avalanche/dist/apis/evm'
+} from '@savannah-labs/savannahjs/dist/apis/evm'
 
-import { Credential, SigIdx, Signature, UTXOResponse, Address } from 'avalanche/dist/common'
-import { getPreferredHRP, PayloadBase } from 'avalanche/dist/utils'
+import {
+    Credential,
+    SigIdx,
+    Signature,
+    UTXOResponse,
+    Address,
+} from '@savannah-labs/savannahjs/dist/common'
+import { getPreferredHRP, PayloadBase } from '@savannah-labs/savannahjs/dist/utils'
 import { HdWalletCore } from '@/js/wallets/HdWalletCore'
 import { ILedgerAppConfig } from '@/store/types'
 import { WalletNameType } from '@/js/wallets/types'
@@ -64,7 +74,7 @@ import { ParseableAvmTxEnum, ParseablePlatformEnum, ParseableEvmTxEnum } from '.
 import { ILedgerBlockMessage } from '../../store/modules/ledger/types'
 import Erc20Token from '@/js/Erc20Token'
 import { WalletHelper } from '@/helpers/wallet_helper'
-import { Utils, NetworkHelper, Network } from '@avalabs/avalanche-wallet-sdk'
+import { Utils, NetworkHelper, Network } from '@savannah-labs/savannah-wallet-sdk'
 
 export const MIN_EVM_SUPPORT_V = '0.5.3'
 
@@ -628,8 +638,10 @@ class LedgerWallet extends HdWalletCore implements AvaWalletCore {
     getEvmTransactionMessages(tx: Transaction): ILedgerBlockMessage[] {
         let gasPrice = tx.gasPrice
         let gasLimit = tx.gasLimit
-        let totFee = gasPrice.mul(new BN(gasLimit))
-        let feeNano = Utils.bnToBig(totFee, 9)
+        let totFee = gasPrice.mul(new BN(gasLimit.toString()))
+        //let feeNano = Utils.bnToBig(totFee, 9)
+        let mult = Big(10).pow(9)
+        let feeNano = new Big(totFee.toString()).div(mult)
 
         let msgs: ILedgerBlockMessage[] = []
         try {

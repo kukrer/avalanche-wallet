@@ -28,7 +28,12 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import { AvaNftFamily } from '@/js/AvaNftFamily'
 import NFTCard from './NftCard.vue'
 import { IWalletNftDict, IWalletNftMintDict } from '@/store/types'
-import { NFTTransferOutput, UTXO, AVMConstants, NFTMintOutput } from 'avalanche/dist/apis/avm'
+import {
+    NFTTransferOutput,
+    UTXO,
+    AVMConstants,
+    NFTMintOutput,
+} from '@savannah-labs/savannahjs/dist/apis/avm'
 import { NftGroupDict } from '@/components/wallet/portfolio/types'
 import CollectibleFamilyGroup from '@/components/wallet/portfolio/CollectibleFamilyGroup.vue'
 @Component({
@@ -116,7 +121,7 @@ export default class CollectibleFamilyRow extends Vue {
 </script>
 <style scoped lang="scss">
 @use '../../../main';
-@use "tokens";
+@use 'tokens';
 
 .mint_card {
     font-size: 13px;

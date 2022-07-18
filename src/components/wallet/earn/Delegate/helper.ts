@@ -1,8 +1,8 @@
 import { ValidatorListFilter } from '@/components/wallet/earn/Delegate/types'
 import { ValidatorListItem } from '@/store/modules/platform/types'
 import { DAY_MS } from '@/constants'
-import { ONEAVAX } from 'avalanche/dist/utils'
-import { BN } from 'avalanche'
+import { ONEAVAX } from '@savannah-labs/savannahjs/dist/utils'
+import { BN } from '@savannah-labs/savannahjs'
 
 function filterValidatorList(
     list: ValidatorListItem[],

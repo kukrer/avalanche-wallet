@@ -1,7 +1,7 @@
-import { UTXOSet as AVMUTXOSet } from 'avalanche/dist/apis/avm/utxos'
-import { UTXOSet as PlatformUTXOSet } from 'avalanche/dist/apis/platformvm/utxos'
+import { UTXOSet as AVMUTXOSet } from '@savannah-labs/savannahjs/dist/apis/avm/utxos'
+import { UTXOSet as PlatformUTXOSet } from '@savannah-labs/savannahjs/dist/apis/platformvm/utxos'
 import { avm, cChain, pChain } from '@/AVA'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 
 export async function getStakeForAddresses(addrs: string[]): Promise<BN> {
     if (addrs.length <= 256) {

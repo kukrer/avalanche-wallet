@@ -8,11 +8,11 @@
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import { NFTTransferOutput } from 'avalanche/dist/apis/avm'
+import { NFTTransferOutput } from '@savannah-labs/savannahjs/dist/apis/avm'
 import NftPayloadView from '@/components/misc/NftPayloadView/NftPayloadView.vue'
-import { PayloadBase } from 'avalanche/dist/utils'
-import { Buffer } from 'avalanche'
-import { PayloadTypes } from 'avalanche/dist/utils'
+import { PayloadBase } from '@savannah-labs/savannahjs/dist/utils'
+import { Buffer } from '@savannah-labs/savannahjs'
+import { PayloadTypes } from '@savannah-labs/savannahjs/dist/utils'
 import { NftGroupDict } from '../wallet/portfolio/types'
 import { AvaNftFamily } from '../../js/AvaNftFamily'
 import { UTXO } from '@/store/modules/history/types'

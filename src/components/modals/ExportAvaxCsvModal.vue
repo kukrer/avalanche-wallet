@@ -37,7 +37,7 @@ import {
     parseMemo,
 } from '@/store/modules/history/history_utils'
 import { ava, avm } from '@/AVA'
-import { BN } from 'avalanche'
+import { BN } from '@savannah-labs/savannahjs'
 
 @Component({
     components: {

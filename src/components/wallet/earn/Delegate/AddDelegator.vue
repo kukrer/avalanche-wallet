@@ -200,7 +200,7 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator'
 
 import AvaxInput from '@/components/misc/AvaxInput.vue'
 //@ts-ignore
-import { QrInput } from '@avalabs/vue_components'
+import { QrInput } from '@savannah-labs/vue_components'
 import ValidatorsList from '@/components/misc/ValidatorList/ValidatorsList.vue'
 import { ValidatorRaw } from '@/components/misc/ValidatorList/types'
 import StakingCalculator from '@/components/wallet/earn/StakingCalculator.vue'
@@ -208,12 +208,17 @@ import ConfirmPage from '@/components/wallet/earn/Delegate/ConfirmPage.vue'
 import Big from 'big.js'
 import moment from 'moment'
 
-import { BN } from 'avalanche'
-import { AmountOutput, PlatformVMConstants, UTXO, UTXOSet } from 'avalanche/dist/apis/platformvm'
+import { BN } from '@savannah-labs/savannahjs'
+import {
+    AmountOutput,
+    PlatformVMConstants,
+    UTXO,
+    UTXOSet,
+} from '@savannah-labs/savannahjs/dist/apis/platformvm'
 import { ava, avm, bintools, infoApi, pChain } from '@/AVA'
 import MnemonicWallet from '@/js/wallets/MnemonicWallet'
 import { bnToBig, calculateStakingReward } from '@/helpers/helper'
-import { Defaults, ONEAVAX } from 'avalanche/dist/utils'
+import { Defaults, ONEAVAX } from '@savannah-labs/savannahjs/dist/utils'
 import { ValidatorListItem } from '@/store/modules/platform/types'
 import NodeSelection from '@/components/wallet/earn/Delegate/NodeSelection.vue'
 import CurrencySelect from '@/components/misc/CurrencySelect/CurrencySelect.vue'
@@ -621,7 +626,7 @@ export default class AddDelegator extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "../../../../main";
+@use '../../../../main';
 
 .add_delegator {
     height: 100%;

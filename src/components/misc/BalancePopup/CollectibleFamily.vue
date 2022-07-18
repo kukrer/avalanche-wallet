@@ -22,9 +22,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { AvaNftFamily } from '@/js/AvaNftFamily'
 import { IWalletNftDict } from '@/store/types'
-import { NFTTransferOutput, UTXO } from 'avalanche/dist/apis/avm'
-import { Buffer } from 'avalanche'
-import { PayloadBase, PayloadTypes } from 'avalanche/dist/utils'
+import { NFTTransferOutput, UTXO } from '@savannah-labs/savannahjs/dist/apis/avm'
+import { Buffer } from '@savannah-labs/savannahjs'
+import { PayloadBase, PayloadTypes } from '@savannah-labs/savannahjs/dist/utils'
 import NftPayloadView from '@/components/misc/NftPayloadView/NftPayloadView.vue'
 import { getPayloadFromUTXO } from '@/helpers/helper'
 
