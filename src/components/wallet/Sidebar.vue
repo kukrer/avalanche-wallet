@@ -68,7 +68,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@use "../../main";
+@use '../../main';
 
 .wallet_sidebar {
     .stick {

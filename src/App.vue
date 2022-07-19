@@ -97,7 +97,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@use "./main";
+@use './main';
 
 .main_cols {
     &[wallet_view] {
@@ -132,7 +132,7 @@ export default {
 </style>
 
 <style lang="scss">
-@use "./main";
+@use './main';
 
 html {
     height: 100%;

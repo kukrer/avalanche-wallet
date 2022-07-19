@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-@use "../../main";
+@use '../../main';
 
 .checkbox {
     .v-label {

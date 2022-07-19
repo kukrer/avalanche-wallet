@@ -41,5 +41,5 @@ export default class ERC721FamilyRow extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "tokens";
+@use 'tokens';
 </style>

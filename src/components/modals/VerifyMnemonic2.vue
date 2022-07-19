@@ -137,7 +137,7 @@ export default class VerifyMnemoni2 extends Vue {
 }
 </script>
 <style scoped lang="scss">
-@use "../../main";
+@use '../../main';
 
 .mnemonic_body {
     padding: 30px;

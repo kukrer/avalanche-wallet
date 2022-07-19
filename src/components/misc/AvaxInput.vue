@@ -31,7 +31,7 @@
 <script lang="ts">
 import 'reflect-metadata'
 import { Vue, Component, Prop, Model } from 'vue-property-decorator'
-import { Utils, Big } from '@savannah-labs/savannah-wallet-sdk'
+import { Big, bnToBig } from '@savannah-labs/savannah-wallet-sdk'
 //@ts-ignore
 import { BigNumInput } from '@savannah-labs/vue_components'
 import { BN } from '@savannah-labs/savannahjs'
@@ -65,7 +65,7 @@ export default class AvaxInput extends Vue {
 
     get amountUSD(): Big {
         let usdPrice = this.priceDict.usd
-        let amount = Utils.bnToBig(this.amount, 9)
+        let amount = bnToBig(this.amount, 9)
         let usdBig = amount.times(usdPrice)
         return usdBig
     }

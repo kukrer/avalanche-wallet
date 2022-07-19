@@ -78,7 +78,7 @@ export default class Home extends Vue {}
 </script>
 
 <style scoped lang="scss">
-@use "../main";
+@use '../main';
 
 .home {
     padding-top: 100px;
